@@ -1,0 +1,479 @@
+*{
+    /*2) Esto hace que no crezca los bordes mas de margen que se le da*/
+    box-sizing: border-box;
+}
+
+html{
+    /*Hace al scroll mas suave o natural*/
+    scroll-behavior: smooth;
+}
+
+body{
+/*4) darle formato a las letras*/
+    font-family: 'Roboto', sans-serif;
+    /*1) Empezar siempre con el margen del body*/
+    margin: 0;
+
+}
+
+/*3) darle tamaño a las letras*/
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.75em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    /*5) darle tamaño a los botones*/
+    font-size: 1.5em;
+    /*6) darle estilo a los botones*/
+    font-weight: bold;
+    /*7) darle tamaño a los margenes vertical + horizontal a los botones*/
+    padding: 10px 20px;
+    /*8) darle forma a los botones y que no sean retangulares*/
+    border-radius: 10px;
+    /*9) darle color al borde de los botones*/
+    border: 1px solid rgba(0, 0, 0, 5);
+    /*10) darle sombreado a los margenes vertical + horizontal a los botones*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    /*11) darle color a las fuentes*/
+    color: white;
+    /*12) darle color a los botones*/
+    background-color: blueviolet ;
+
+}
+
+/*13) Agregarle un hover para detectar que el cursor este por encima*/
+button:hover{
+/*14) Usamos el mismo color que el el boton pero con unos tonos menos
+esto se hace presionando el cuadradito del color y eligiendo un tono*/
+    background-color: rgb(170, 107, 230) ;
+}
+
+/*15 El conteiner sirve para que el contenido se estire al maximo del ancho de la pagina */
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
+/*16 No usar blanco por defecto porque la pagina parece trucha usar otro tipo de blanco como el 245*/
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+/*17) modificar todo lo que esta dentro del header y poner . y nombre del elemento por ejemplo logo*/
+header .logo{
+/*18) margin sirve para que se distribuya hacia arriba o abajo*/
+    margin: 0;
+/*19) padding para distribuirlo hacia los costados*/
+padding: 25px 30px;
+
+/*21) Agregar la fuente negrita*/
+font-weight: bold;
+/*22) Agregar tamaño al logo*/
+font-size: 1.6em;
+/*23) Agregar el color*/
+color: blueviolet;
+
+
+}
+
+/*20) centrar los que esta dentro del contenedor*/
+header .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/*24) centrar los que esta dentro del nav*/
+header .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*25) darle tamaño a los margenes vertical + horizontal a los botones*/
+    padding: 25px;
+    
+
+}header a{
+/*26) cambiar las letras de headaer del menú*/
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black
+
+}
+
+header a:hover{
+    /*27) hover*/
+    color: blueviolet;
+
+    /*35 minutos*/
+}
+
+/*28) Centra para que se vea en el celular*/
+
+#hero h1{
+    font-size: 5em;
+    
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+    /*ESTETICA DE IMAGEN INICIO*/
+
+    /*29) Agregar imagen al hero*/
+    background-image: linear-gradient(
+
+        /*30) agregar filtro negro a la imagen (oscurece la imagen) para que se lea mejor el titulo de aprenda a programas.....*/
+    
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+   
+
+    ) 
+    ,url("D:/Usuarios/gisela/Escritorio/Curso html_CSS/curso_web/img/programando1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+#hero h1{
+    color: aliceblue;
+
+}
+
+#hero button{
+    /*46) Agrandar el boton y se centra al min y max con vw*/
+    font-size: 4vw;
+}
+
+/*ESTETICA DE IMAGEN FIN*/
+
+/*40 minutos*/
+/*30) Centrar el texto*/
+
+#somos-proya .conteiner{
+    text-align: center;
+    padding: 50px;
+     
+   
+
+}
+/*31) cambiar el color solo a la palabra Programa ya ir a html y agregar un span para poder modificar el color de la palabra*/
+.color-acento {color: blueviolet;}
+
+#somos-proya h2{
+    font-size: 2em;
+
+}
+
+#Nuestros-programas{
+    
+    background-color: rgb(31, 29, 29);
+    text-align: center;
+    color: white;
+
+    
+}
+/*33darle tamaño a los botones del contenedor nuestro progrmas*/
+
+#Nuestros-programas .conteiner2{
+    padding: 10px 12px;
+}
+
+/*34 centrar el titiulo programas*/
+#Nuestros-programas h2{
+    margin: 20px 12px;
+/*34.2 agrandar el titiulo programas*/
+font-size: 9vw;
+
+}
+
+#Nuestros-programas .conteiner2 p{
+    /*32 le da mejor formato al parrafo de nuestros programas*/
+ display:flex;
+}
+
+/*35 Agregar las imagenes de los cursos*/
+#Nuestros-programas .carta_1{
+    background-image: linear-gradient(
+
+         
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+   
+
+    ) 
+    ,url("D:/Usuarios/gisela/Escritorio/Curso html_CSS/curso_web/img/frontend3.jpg");
+    
+    background-position: center center;
+    /*37 el cover expande imagen y sirve para que se vea mejor la imagen y no pinxelada*/
+    background-size: cover;
+    /*36 a chique el tamaño para que se vea mas pequeño, esto vertical - horizontal*/
+    padding: 25px 50px;
+    /*esto da espacio entre las imagenes, esto vertical - horizontal*/
+    margin: 20px 12px;
+    /*les da borde*/
+    border-radius: 15px;
+    
+    
+
+    
+
+}
+
+#Nuestros-programas .carta_2{
+    background-image: linear-gradient(
+
+         
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+   
+
+    ) 
+    ,url("D:/Usuarios/gisela/Escritorio/Curso html_CSS/curso_web/img/frontend4.jpg");
+    background-position: center center;
+    /*37 el cover expande imagen y sirve para que se vea mejor la imagen y no pinxelada*/
+    background-size: cover;
+    /*36 a chique el tamaño para que se vea mas pequeño, esto vertical - horizontal*/
+    padding: 25px 50px;
+    /*esto da espacio entre las imagenes, esto vertical - horizontal*/
+    margin: 20px 12px;
+    border-radius: 15px;
+   
+        
+
+}
+
+#Nuestros-programas .carta_3{
+    background-image: linear-gradient(
+
+         
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+   
+
+    ) 
+    ,url("D:/Usuarios/gisela/Escritorio/Curso html_CSS/curso_web/img/frontend5.jpg");
+    background-position: center center;
+    /*37 el cover expande imagen y sirve para que se vea mejor la imagen y no pinxelada*/
+    background-size: cover;
+    /*36 a chique el tamaño para que se vea mas pequeño, esto vertical - horizontal*/
+    padding: 25px 50px;
+    /*esto da espacio entre las imagenes, esto vertical - horizontal*/
+    margin: 20px 12px;
+    border-radius: 15px;
+
+}
+
+
+
+/*45 minutos truco de cartas*/
+
+#Caracteristicas .conteiner{
+    /**/
+    /*40) Centrar el texto*/
+    text-align: center;
+    /*41) Dar espacio de margen horizontal y vertical entre los otros margenes*/
+    padding: 100px 12px;
+
+}
+
+#Caracteristicas li{
+    /*42) espacio entre las imagenes o secciones*/
+    margin: 16px 0px;
+    /*43) letras en negrita*/
+    font-size: bold;
+
+}
+
+#listo-programar-final{
+
+    /* 44) Fondo de la seccion*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 80vh;
+      
+
+}
+
+/*45) Agrandar el titulo y se centra al min y max con vw*/
+#listo-programar-final h2{
+    font-size: 9vw;
+}
+
+/*46) Agrandar el boton y se centra al min y max con vw*/
+#listo-programar-final button{
+    font-size: 4vw;
+}
+footer{
+    background-color: rgb(230,230, 230);
+}
+
+/*47) Pie de pagina*/
+footer p{
+    margin: 0;
+    padding: 12px;
+    color:rgb(100, 100, 100)
+}
+
+footer .conteiner{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Hasta aquí la adaptación mobile*/
+
+/*Adaptar la pag a la web*/
+@media (min-width: 720px){ 
+    header{
+        /*Deja la cabecera fija al momento de scrollear*/
+        position: fixed;
+        width: 100%;
+    }
+
+    header .conteiner{
+
+        /*La propiedad CSS flex-direction especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés)*/
+        flex-direction: row;
+        /*La propiedad CSS justify-content define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje*/
+        justify-content: space-between;
+        }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        /*La propiedad padding-bottom CSS establece el espacio de relleno requerido en la parte inferior del elemento. El área de padding es el espacio entre el contenido del elemento y su borde. Contrariamente de la propiedad margin-bottom, valores negativos no son válidos.*/
+        padding-right: 20px;
+        /*La propiedad padding-right describe cuanto espacio colocar entre el borde derecho y el contenido del selector.*/
+    }
+
+    
+}
+
+/*1:02:12*/
+/*********ESTA SECCION ES PARA DISEÑAR EL FORMATO COLUMNA (contenidos en vertical)*********/
+#somos-proya .conteiner{
+    /*Sirve para ver los elementos, contenidos o imagenes en cajas*/
+    display: flex;
+    /*centrar el contenido, en este caso el del texto y su imagen*/
+    justify-content:space-evenly; /*reemplazo al padding center siguiente*/
+ 
+}
+
+#somos-proya .texto{
+       width: 50%; /*ancho*/
+       max-width: 600px; /*maximo de ancho*/
+       /* la propiedad text-align no sólo controla la alineación del texto. En realidad, esta propiedad establece la alineación de los contenidos (texto, imágenes) que se encuentran dentro de un elemento de bloque.*/
+       text-align:initial;
+       /*Espacio entre las columnas en este caso entre el texto y la imagen*/
+       padding-left: 30px;
+       display: flex; /*flexibilidad en la columna para el caso del texto*/
+       flex-direction: column; /*Flexibiliza en este caso el texto de la columna cuando se agranda o se achica pantalla*/
+       justify-content:center;      
+
+
+}
+
+#somos-proya .img-conteiner{
+    /*Asi se ve mejor la imagen sin filtro oscuro*/
+    background-image: url("D:/Usuarios/gisela/Escritorio/Curso html_CSS/curso_web/img/frontend6.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px; /*altura*/
+    width: 400px; /*ancho*/ 
+
+}
+
+#Nuestros-programas h2{
+    padding: 50px 12px;
+    font-size: 3em; 
+    margin-top: 30px;  
+    
+}
+
+#Nuestros-programas h2{
+    padding: 50px 12px;
+    font-size: 3em; 
+    margin-top: 30px;  
+    
+}
+
+#Nuestros-programas .conteiner2{
+    display: flex;
+    justify-content:left; /*es donde queres se muestre al minimizar la pantalla de a la izquierda , centro o derecha*/
+    /*Agrega scroll horizontal*/
+    overflow-x: scroll;
+       
+       
+}
+
+#Nuestros-programas .conteiner2 {
+    
+    align-items: center;
+    text-align: center;
+    flex-direction:row;
+    
+
+    
+}
+
+#Nuestros-programas .conteiner2 p{
+    display: block;  
+    
+}
+
+#Nuestros-programas .carta_1{
+    
+    padding: 15px;
+    margin-bottom: 30px;
+    /*Esto da sombra en los margenes*/
+    box-shadow: 4px 4px 20px rgba(224, 215, 215, 0.5);
+    
+}
+
+#Nuestros-programas .carta_2{
+    
+    padding: 15px;
+    margin-bottom: 30px;
+    /*Esto da sombra en los margenes*/
+    box-shadow: 4px 4px 20px rgba(224, 215, 215, 0.5);
+    
+    
+}
+#Nuestros-programas .carta_3{
+    
+    padding: 15px;
+    margin-bottom: 30px;
+    /*Esto da sombra en los margenes*/
+    box-shadow: 4px 4px 20px rgba(224, 215, 215, 0.5);
+    
+    
+}
+
+/*Minuto 1:16 para agrgar otro formato de cartas fotos pequeñas y un fondo gris */
+
+/*minuto 1:17*/
+
+
+ 
+
+
