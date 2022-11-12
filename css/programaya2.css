@@ -141,7 +141,8 @@ header a:hover{
    /* ,url("D:/Usuarios/gisela/Escritorio/Curso html_CSS/curso_web/img/programando1.jpg");*/
    /* ,url("https://github.com/giselavillalba2023/giselavillalba2023.github.io/blob/main/img/programando1.jpg");*/
    /* ,url("img/programando1.jpg");*/
-      ,url("https://github.com/giselavillalba2023/giselavillalba2023.github.io/blob/c53ce6cdd92617cccf2de0c34c7cdad5cba80c18/img/programando1.jpg");
+     /* ,url("https://github.com/giselavillalba2023/giselavillalba2023.github.io/blob/c53ce6cdd92617cccf2de0c34c7cdad5cba80c18/img/programando1.jpg");*/
+        ,url(..img/programando1.jpg");*/
 
         
     background-repeat: no-repeat;
